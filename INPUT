@@ -1,0 +1,23 @@
+!				GKE INPUT FILE
+&INPUT
+ro1=6.007		! outer L shell 
+ro2=6.0                 ! inner L shell
+r_ionosphere=5.0 	! Geocentric distance of low altitude boundary
+T_e=10.			! electron temperature in eV
+T_i=10.			! ion temperature in eV
+twrite=2.0 		! fluid write initial t
+dtwrite=2.0		! fluid write dt
+twrite_p=2.0	  	! particle write initial t
+dtwrite_p=2.0	  	! particle write dt
+twrite_fw=4.0   	! full write initial t
+dtwrite_fw=4.0		! full write dt
+tmax=800.0		! maximum simulation time in seconds
+iparticle_write=1       ! write out particle data (0-off, 1-on)
+RESTART=.FALSE.         ! Restart run from previous time dump (TRUE/FALSE)
+fwhm_par=0.028          ! Parallel width of initial Gaussian pert (radians)
+fwhm=0.00139            ! Perp. width of Gaussian envelope (Fraction of L)
+L_perp=1.e5             ! L_perp - perpendicular length scale in meters
+Amp=1.0d5               ! Perturbation amplitude in m/s
+vp_min=-1.e7            ! Min distribution function velocity 
+vp_max=1.e7             ! Max distribution function velocity
+/
